@@ -10,7 +10,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Instagram Bootstrap</title>
 </head>
 
 <body>
@@ -20,14 +20,13 @@
             <a class="navbar-brand ms-5" href="#">
                 <i class="fa-brands fa-instagram"></i>Instagram
             </a>
+            <!-- Boton de hamburguesa para telefonos movil -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <form class="d-flex" role="search">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -51,7 +50,7 @@
                                             id="floatingTextarea"></textarea>
                                         <label for="floatingTextarea">Add the caption of your post here</label>
                                     </div>
-                                    <div class="iconos-modal">
+                                    <div class="mt-2">
                                         <button type="button" class="btn btn-light"><i
                                                 class="fa-solid fa-camera"></i></button>
                                         <button type="button" class="btn btn-light"><i
@@ -93,18 +92,257 @@
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane"
-                    type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                    type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="individual-tab" data-bs-toggle="tab" data-bs-target="#individual-tab-pane"
-                    type="button" role="tab" aria-controls="individual-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                <button class="nav-link" id="column-tab" data-bs-toggle="tab" data-bs-target="#column-tab-pane"
+                    type="button" role="tab" aria-controls="column-tab-pane" aria-selected="false"><i
+                        class="fa-solid fa-square"></i></button>
             </li>
         </ul>
+
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">...</div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                ...</div>
+            <!------------------Página en grid----------------->
+            <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://img2.huffingtonpost.es/files/og_thumbnail/uploads/2022/12/21/63a33247bdff7.jpeg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://preview.redd.it/the-original-sad-cat-image-v0-keatpsrp5fce1.png?width=640&crop=smart&auto=webp&s=cd5c7dadb1c7b5200f551b58c983909398e1bbad"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://pbs.twimg.com/media/EK5KrfLUcAAmVEC.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover" src="./src/Imagen Bootstrap.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://media.istockphoto.com/id/1413735503/es/foto/redes-sociales-social-medios-marketing-tailandia-redes-sociales-compromiso-post-estructura.jpg?s=612x612&w=0&k=20&c=WsswOZ0ZKBIW4SWJb_nkwC_pOGVRd1ugHLxa3A6DmIA="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://media.istockphoto.com/id/2153792629/es/foto/veladas-acogedoras-en-el-sof%C3%A1.jpg?s=612x612&w=0&k=20&c=McYVzUKd2BvOZMIiRPndvQPs7A3w8reMXZ2i6QOKGOU="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://media.istockphoto.com/id/1040896222/es/foto/imagen-victoriana-de-un-soldado-que-estaba-parado-en-la-cima-de-un-marineros-por-lo-que-%C3%A9l.jpg?s=612x612&w=0&k=20&c=JIsruR8wbLQRker-hzzx-kRDHyu_kR9htc3UFPUj1tg="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="ratio ratio-1x1">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://media.istockphoto.com/id/1324099927/es/foto/amigos-gato-rojo-y-perro-corgi-caminando-en-un-prado-de-verano-bajo-las-gotas-de-lluvia-c%C3%A1lida.jpg?s=612x612&w=0&k=20&c=Od6qc4DAysTNuSVOdBlZJcdfDmp3QIy-v95IznQ7ZfU="
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------Página en columna----------------->
+            <div class="tab-pane fade" id="column-tab-pane" role="tabpanel" aria-labelledby="column-tab" tabindex="0">
+                <!------------------Carta indivudual----------------->
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Un paisaje increible</h5>
+                        <p class="my-0">20/12</p>
+                    </div>
+                    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            204 Likes
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et officia debitis voluptatum,
+                            ipsa illum explicabo recusandae distinctio optio vitae nostrum quam rerum harum
+                            reprehenderit dolores, delectus voluptate exercitationem labore deleniti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Perrito</h5>
+                        <p class="my-0">10/12</p>
+                    </div>
+                    <img src="https://img2.huffingtonpost.es/files/og_thumbnail/uploads/2022/12/21/63a33247bdff7.jpeg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            10M Likes
+                        </p>
+                        <p class="card-text">
+                            Intentando manipularos emocionalmente con este perrito para que seáis benevolentes conmigo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Gatito</h5>
+                        <p class="my-0">10/12</p>
+                    </div>
+                    <img src="https://preview.redd.it/the-original-sad-cat-image-v0-keatpsrp5fce1.png?width=640&crop=smart&auto=webp&s=cd5c7dadb1c7b5200f551b58c983909398e1bbad"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            10M Likes
+                        </p>
+                        <p class="card-text">
+                            Por si sois más de gatos que de perros.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Meme</h5>
+                        <p class="my-0">10/12</p>
+                    </div>
+                    <img src="https://pbs.twimg.com/media/EK5KrfLUcAAmVEC.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            1.302 Likes
+                        </p>
+                        <p class="card-text">
+                            Aquí iba a seguir dándoos pena con una imagen mía con carita triste, pero me ha recordado a
+                            esta escena de los Simpson que es increíble.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Aprendiendo Bootstrap</h5>
+                        <p class="my-0">07/11</p>
+                    </div>
+                    <img src="./src/Imagen Bootstrap.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            0 Likes
+                        </p>
+                        <p class="card-text">
+                            Tirándome de los pelos pero un poco menos que con css.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Redes sociales</h5>
+                        <p class="my-0">01/11</p>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1413735503/es/foto/redes-sociales-social-medios-marketing-tailandia-redes-sociales-compromiso-post-estructura.jpg?s=612x612&w=0&k=20&c=WsswOZ0ZKBIW4SWJb_nkwC_pOGVRd1ugHLxa3A6DmIA="
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            204 Likes
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate molestiae error
+                            excepturi mollitia, doloremque, porro expedita vero quas, perspiciatis deleniti? Harum
+                            numquam officiis repudiandae natus et modi veritatis perspiciatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Familia</h5>
+                        <p class="my-0">28/10</p>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/2153792629/es/foto/veladas-acogedoras-en-el-sof%C3%A1.jpg?s=612x612&w=0&k=20&c=McYVzUKd2BvOZMIiRPndvQPs7A3w8reMXZ2i6QOKGOU="
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            2.856 Likes
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate molestiae error
+                            excepturi mollitia, doloremque, porro expedita vero quas, perspiciatis deleniti? Harum
+                            numquam officiis repudiandae natus et modi veritatis perspiciatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Ayuda</h5>
+                        <p class="my-0">25/10</p>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1040896222/es/foto/imagen-victoriana-de-un-soldado-que-estaba-parado-en-la-cima-de-un-marineros-por-lo-que-%C3%A9l.jpg?s=612x612&w=0&k=20&c=JIsruR8wbLQRker-hzzx-kRDHyu_kR9htc3UFPUj1tg="
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            4.548 Likes
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate molestiae error
+                            excepturi mollitia, doloremque, porro expedita vero quas, perspiciatis deleniti? Harum
+                            numquam officiis repudiandae natus et modi veritatis perspiciatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mx-auto my-3" style="width: 30rem;">
+                    <div
+                        class="card-header bg-transparent border-light d-flex justify-content-between align-items-center p-2">
+                        <h5 class="my-0">Felicidad</h5>
+                        <p class="my-0">15/10</p>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1324099927/es/foto/amigos-gato-rojo-y-perro-corgi-caminando-en-un-prado-de-verano-bajo-las-gotas-de-lluvia-c%C3%A1lida.jpg?s=612x612&w=0&k=20&c=Od6qc4DAysTNuSVOdBlZJcdfDmp3QIy-v95IznQ7ZfU="
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text fw-bold border-bottom border-light mb-1">
+                            9.673 Likes
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate molestiae error
+                            excepturi mollitia, doloremque, porro expedita vero quas, perspiciatis deleniti? Harum
+                            numquam officiis repudiandae natus et modi veritatis perspiciatis.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
