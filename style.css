@@ -1,0 +1,15 @@
+/* #troll:hover{
+    position: absolute;
+    top: random(10px, 200px);
+    left: random(10px, 200px);
+} */
+#troll:active{
+    position: relative;
+    top:  125px;
+    left: -100px;
+} 
+/* #troll:focus{
+    position: absolute;
+    top: random();
+    left: random();
+} */
